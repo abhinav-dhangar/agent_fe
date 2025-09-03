@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "gruno_bubble";
+  src: url("/fonts/gruno_bubble.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gruno_trial";
+  src: url("/fonts/gruno_trial.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gruno_bubble {
+  font-family: "gruno_bubble", sans-serif;
+}
+
+.gruno_trial {
+  font-family: "gruno_trial", sans-serif;
+}
+
+@font-face {
+  font-family: "wes";
+  src: url("/fonts/Wes.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wes {
+  font-family: "wes", sans-serif;
+}
+
+@font-face {
+  font-family: "myron";
+  src: url("/fonts/myron.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myron {
+  font-family: "myron", sans-serif;
+}
