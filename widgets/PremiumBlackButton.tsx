@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "motion/react"
 
 const MotionButton = motion(Button)
-const BlackButton = () => {
+const   BlackButton = () => {
 
     return (
         <div className="relative">
