@@ -41,3 +41,53 @@
 .myron {
   font-family: "myron", sans-serif;
 }
+
+@font-face {
+  font-family: "boska_medium";
+  src: url("/fonts/boska_medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boska_medium {
+  font-family: "boska_medium", sans-serif;
+}
+
+@font-face {
+  font-family: "boska_regular";
+  src: url("/fonts/boska_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boska_regular {
+  font-family: "boska_regular", sans-serif;
+}
+  
+
+
+
+
+@font-face {
+  font-family: "shavanshi_rajdhani";
+  src: url("/fonts/shavanshi_rajdhani.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.shavanshi_rajdhani {
+  font-family: "shavanshi_rajdhani", sans-serif;
+}
+  
+
+@font-face {
+  font-family: "safeya";
+  src: url("/fonts/safeya.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.safeya {
+  font-family: "safeya", sans-serif;
+}
+  
