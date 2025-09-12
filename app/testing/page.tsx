@@ -5,14 +5,27 @@ import Navbar from "@/widgets/Navbar"
 import BlackButton from "@/widgets/PremiumBlackButton"
 import { DemoOne } from "@/widgets/whatsapp/Input"
 import { HeroTitle } from "@/widgets/HeroTitle"
+import { FeaturesGuide } from "@/widgets/FeaturesGuide"
 import { Hero } from "@/components/ui/animated-hero"
 import { SpinningText } from "@/components/ui/spinning-text"
-export default function Page() {
+import LeftArrow from "@/public/svg/left_arrow.svg"
+import RightArrow from "@/public/svg/right_arrow.svg"
+ export default function Page() {
     return (
         <div>
             <Navbar />
             {/* <HeroTitle /> */}
             <Hero />
+            <div className="flex relative items-center w-screen ">
+                <img src="svg/left_arrow.svg" className="absolute left-0 w-[40px] h-[40px] top-[50%] -translate-y-1/2" />
+                <img src="svg/right_arrow.svg" className="absolute right-0 w-[40px] h-[40px] top-[50%] -translate-y-1/2" />
+               <LeftArrow />
+               <RightArrow />
+            </div>
+            <div className="my-10">
+                <h1 className="text-4xl font-bold text-center mb-4">All-in-One AI Workflow & Agent Platform</h1>
+                <p className="text-center w-[60%] mx-auto">this is Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus, maxime illo fugit, inventore consequuntur labore quis, id a architecto blanditiis! Fugiat?</p>
+            </div>
             <div className="absolute top-9 left-[70px]">
 
                 <SpinningText
@@ -26,17 +39,18 @@ export default function Page() {
             </div>
             {/* <BlackButton /> */}
             <DemoOne />
-            <div className="relative">
-                
+            <FeaturesGuide />
+            <div className="relative w-screen h-[310px] ">
+
                 <div className="absolute rotate-3 items-center justify-center flex gap-2 w-fit h-fit top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <RoundedImage   src={"/urvashi.jpg"} className="top-[80px] " deg={-14} />
+                    <RoundedImage src={"/urvashi.jpg"} className="top-[80px] " deg={-14} />
                     <RoundedImage src={"/urvashi.jpg"} deg={-7} className="top-[35px] right-[47px]" />
                     <RoundedImage src={"/urvashi.jpg"} deg={-4} className="top-[41px] right-[84px]" />
                     <RoundedImage src={"/urvashi.jpg"} deg={3} className="top-[6px] right-[124px]" />
                     <RoundedImage src={"/urvashi.jpg"} deg={7} className="top-[38px] right-[150px]" />
                 </div>
 
-{/* 
+                {/* 
                 <div className="absolute rotate-3 flex gap-2 w-fit h-fit top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <RoundedImage src="/urvashi.jpg" className="top-[80px]" deg={-14} delay={0} />
                 <RoundedImage src="/urvashi.jpg" className="top-[35px] right-[47px]" deg={-7} delay={0.1} />

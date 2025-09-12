@@ -9,7 +9,7 @@ export default function App() {
     return (
 
         <motion.div
-            className="relative text-yellow-200 bg-[#f6f5ff] aspect-[4/3] w-[calc(100%+2px)] m-[-1px ]  border-blue-700 border-2 overflow-hidden cursor-pointer"
+            className="relative text-yellow-200 bg-[#f6f5ff ] aspect-[4/3] w-[calc(100%+2px)] m-[-1px ]  border-blue-700 border-2 overflow-hidden cursor-pointer"
             initial="initial"
             whileHover="hover"
         >
