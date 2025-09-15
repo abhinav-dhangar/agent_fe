@@ -139,6 +139,131 @@
   }
   body {
     background-color: #fff5ee;
-     @apply bg-background text-foreground;
+    @apply bg-background text-foreground;
   }
+}
+
+.blackGradient {
+  background: linear-gradient(rgba(18, 18, 18, 0) 0%, rgb(16, 16, 16) 96%);
+  border-radius: 0px;
+  opacity: 1;
+  flex: none;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+
+
+@font-face {
+  font-family: "gruno_bubble";
+  src: url("/fonts/gruno_bubble.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gruno_trial";
+  src: url("/fonts/gruno_trial.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gruno_bubble {
+  font-family: "gruno_bubble", sans-serif;
+}
+
+.gruno_trial {
+  font-family: "gruno_trial", sans-serif;
+}
+
+@font-face {
+  font-family: "wes";
+  src: url("/fonts/Wes.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wes {
+  font-family: "wes", sans-serif;
+}
+
+@font-face {
+  font-family: "myron";
+  src: url("/fonts/myron.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myron {
+  font-family: "myron", sans-serif;
+}
+
+@font-face {
+  font-family: "boska_medium";
+  src: url("/fonts/boska_medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boska_medium {
+  font-family: "boska_medium", sans-serif;
+}
+
+@font-face {
+  font-family: "boska_regular";
+  src: url("/fonts/boska_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boska_regular {
+  font-family: "boska_regular", sans-serif;
+}
+
+@font-face {
+  font-family: "shavanshi_rajdhani";
+  src: url("/fonts/shavanshi_rajdhani.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.shavanshi_rajdhani {
+  font-family: "shavanshi_rajdhani", sans-serif;
+}
+
+@font-face {
+  font-family: "safeya";
+  src: url("/fonts/safeya.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.safeya {
+  font-family: "safeya", sans-serif;
+}
+
+.blackGradient {
+  background: linear-gradient(rgba(18, 18, 18, 0) 0%, rgb(16, 16, 16) 96%);
+  border-radius: 0px;
+  opacity: 1;
+  flex: none;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
 }

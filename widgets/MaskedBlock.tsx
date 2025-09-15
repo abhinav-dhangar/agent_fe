@@ -1,35 +1,48 @@
 "use client"
 import { motion } from "motion/react"
+type Props = {
+    userName: string,
+    role: string,
+    cgpa: string,
+    src?: string
 
-
-
-export default function App() {
-
+}
+export default function App({ userName, role, cgpa, src }: Props) {
+    const variants = {
+        initial: { top: "-100%" },
+        hover: { top: "0%" },
+    };
 
     return (
-
         <motion.div
-            className="relative text-yellow-200 bg-[#f6f5ff ] aspect-[4/3] w-[calc(100%+2px)] m-[-1px ]  border-blue-700 border-2 overflow-hidden cursor-pointer"
+            className="relative text-[#2448bf]   bg-[#f6f5ff] aspect-[4/3] w-[calc(100%+2px)] m-[-1px] border-blue-700 border-1 overflow-hidden cursor-pointer"
             initial="initial"
             whileHover="hover"
         >
-            {/* Yellow overlay that slides down on hover */}
-            <motion.div
-                className="absolute top-0 left-0 w-full h-full bg-[#d6dbf5] z-10"
-                variants={{
-                    initial: { y: "-100%" },
-                    hover: { y: "0%" }
-                }}
-                transition={{
-                    duration: 0.3,
-                    ease: "easeInOut"
-                }}
-            />
-            sdfkalj
+            {/* 1) Background layer (under everything) */}
+            <div className="absolute inset-0 z-0 bg-[#f6f5ff" />
 
-            {/* Optional content inside the box */}
-            <div className="relative z-20 flex items-center justify-center h-full">
-                {/* Add any content here if needed */}
+            {/* 2) Overlay — above the blue background but below text.
+          pointer-events-none lets clicks/hover pass through to parent/text. */}
+            <motion.div
+                className="absolute left-0 w-full h-full z-10 pointer-events-none"
+                variants={variants}
+                transition={{ duration: 0.28, ease: "circInOut" }}
+                style={{ position: "absolute" }} // ensure top works
+            >
+                <div className="w-full h-full bg-[#d6dbf5]" />
+            </motion.div>
+
+            {/* 3) Content/text — always on top */}
+            <div className="relative z-20 flex flex-col  p-6 md:p-10  justify-between h-full">
+                <span id="userName" className=" shavanshi_rajdhani text-3xl md:text-4xl">
+                    {userName}
+                </span>
+                <div className="flex flex-col items-start">
+                    <span id="role" className=" safeya text-xl md:text-2xl ">{role}</span>
+                    <span id="CGPA" className="">
+                        CGPA : {cgpa}</span>
+                </div>
             </div>
         </motion.div>
     )

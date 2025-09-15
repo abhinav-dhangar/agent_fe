@@ -10,18 +10,17 @@ import { Hero } from "@/components/ui/animated-hero"
 import { SpinningText } from "@/components/ui/spinning-text"
 import LeftArrow from "@/public/svg/left_arrow.svg"
 import RightArrow from "@/public/svg/right_arrow.svg"
- export default function Page() {
+import { Accordian } from "@/widgets/Accordian"
+import Footer from "@/widgets/Footer"
+export default function Page() {
     return (
         <div>
             <Navbar />
             {/* <HeroTitle /> */}
             <Hero />
-            <div className="flex relative items-center w-screen ">
-                <img src="svg/left_arrow.svg" className="absolute left-0 w-[40px] h-[40px] top-[50%] -translate-y-1/2" />
-                <img src="svg/right_arrow.svg" className="absolute right-0 w-[40px] h-[40px] top-[50%] -translate-y-1/2" />
-               <LeftArrow />
-               <RightArrow />
-            </div>
+
+            <LeftArrow className="text-black w-[100px] h-[100px] absolute" />
+            <RightArrow className="text-black w-[100px] h-[100px] absolute" />
             <div className="my-10">
                 <h1 className="text-4xl font-bold text-center mb-4">All-in-One AI Workflow & Agent Platform</h1>
                 <p className="text-center w-[60%] mx-auto">this is Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus, maxime illo fugit, inventore consequuntur labore quis, id a architecto blanditiis! Fugiat?</p>
@@ -43,11 +42,11 @@ import RightArrow from "@/public/svg/right_arrow.svg"
             <div className="relative w-screen h-[310px] ">
 
                 <div className="absolute rotate-3 items-center justify-center flex gap-2 w-fit h-fit top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <RoundedImage src={"/urvashi.jpg"} className="top-[80px] " deg={-14} />
-                    <RoundedImage src={"/urvashi.jpg"} deg={-7} className="top-[35px] right-[47px]" />
-                    <RoundedImage src={"/urvashi.jpg"} deg={-4} className="top-[41px] right-[84px]" />
-                    <RoundedImage src={"/urvashi.jpg"} deg={3} className="top-[6px] right-[124px]" />
-                    <RoundedImage src={"/urvashi.jpg"} deg={7} className="top-[38px] right-[150px]" />
+                    <RoundedImage src={"/pictures/red_flower.avif"} className="top-[80px] " deg={-14} />
+                    <RoundedImage src={"/pictures/red_flower.avif"} deg={-7} className="top-[35px] right-[47px]" />
+                    <RoundedImage src={"/pictures/red_flower.avif"} deg={-4} className="top-[41px] right-[84px]" />
+                    <RoundedImage src={"/pictures/red_flower.avif"} deg={3} className="top-[6px] right-[124px]" />
+                    <RoundedImage src={"/pictures/red_flower.avif"} deg={7} className="top-[38px] right-[150px]" />
                 </div>
 
                 {/* 
@@ -60,6 +59,13 @@ import RightArrow from "@/public/svg/right_arrow.svg"
                 </div> */}
 
             </div>
+            <div className="flex items-center justify-center my-20 mx-20 gap-20">
+                <div className="w-[50%]">
+                    <img src="/pictures/moons.jpg" alt="AI Workflow" className="rounded-lg shadow-lg" />
+                </div>
+                <Accordian />
+            </div>
+            <Footer/>
         </div>
     )
 }
